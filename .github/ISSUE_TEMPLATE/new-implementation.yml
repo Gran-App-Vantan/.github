@@ -9,6 +9,8 @@ body:
       label: 🚀 何を作りたいですか？
       description: 実装したい機能を簡潔に説明してください
       placeholder: |
-        例：ユーザーがプロフィール画像をアップロードできる機能
+        ## 詳細
+        ## 作成箇所と命名規則
+        ## 備考
     validations:
       required: true

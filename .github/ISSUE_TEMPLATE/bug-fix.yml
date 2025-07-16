@@ -1,5 +1,5 @@
 name: 🤯 バグ・不具合修正
-description: アプリケーションで発生しているバグや不具合を報告する際に使用します
+description: バグなどの不具合を修正する際に使用します
 title: "[BUG] "
 labels: ["バグ・不具合修正"]
 body:

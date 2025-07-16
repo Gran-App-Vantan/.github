@@ -1,5 +1,5 @@
 name: 🐴 その他
-description: 他のカテゴリに該当しない質問、提案、ディスカッションなどに使用します
+description: 他のカテゴリに該当しない際に使用します
 title: "[OTHER] "
 labels: ["その他"]
 body:

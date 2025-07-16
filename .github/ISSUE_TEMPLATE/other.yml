@@ -3,20 +3,6 @@ description: 他のカテゴリに該当しない際に使用します
 title: "[OTHER] "
 labels: ["その他"]
 body:
-  - type: dropdown
-    id: issue_type
-    attributes:
-      label: 📝 どんな内容ですか？
-      description: このissueの内容に最も近いものを選択してください
-      options:
-        - 質問・相談
-        - 提案・アイデア
-        - ディスカッション
-        - ドキュメント・資料
-        - 環境・設定
-        - その他
-    validations:
-      required: true
 
   - type: textarea
     id: summary

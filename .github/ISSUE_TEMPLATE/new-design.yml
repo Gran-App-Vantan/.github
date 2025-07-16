@@ -7,38 +7,8 @@ body:
     id: design_summary
     attributes:
       label: 🎯 どのようなデザインを作りますか？
-      description: 作成したいデザインの概要を説明してください
+      description: 作成するデザインの概要を説明してください
       placeholder: |
-        例：モバイル向けのログインページのデザインを作成したい
+        ## 詳細
     validations:
       required: true
-
-  - type: dropdown
-    id: design_type
-    attributes:
-      label: 📋 デザインの種類
-      description: 作成するデザインのタイプを選択してください
-      options:
-        - ロゴ・アイコン
-        - Webページ
-        - モバイルアプリ画面
-        - コンポーネント
-        - バナー・広告
-        - その他
-    validations:
-      required: true
-
-  - type: textarea
-    id: target_and_notes
-    attributes:
-      label: 📝 その他・補足
-      description: ターゲットユーザー、参考デザイン、技術的な要件など
-      placeholder: |
-        例：
-        - ターゲット：20-30代のビジネスパーソン
-        - 参考サイト：https://example.com
-        - 技術要件：React対応、レスポンシブデザイン
-        - 納期：○月末まで
-      value: 特になし
-    validations:
-      required: false

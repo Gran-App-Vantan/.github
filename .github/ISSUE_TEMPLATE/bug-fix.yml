@@ -7,47 +7,12 @@ body:
     id: bug_summary
     attributes:
       label: 🔍 どんな問題が起きていますか？
-      description: 発生している問題を簡潔に説明してください
+      description: 詳細・修正箇所と命名規則・備考を入力してください
       placeholder: |
-        例：ログインページでメールアドレスを入力してもエラーが表示される
+        ## 詳細
+
+        ## 修正箇所と命名規則
+
+        ## 備考
     validations:
       required: true
-
-  - type: textarea
-    id: reproduction_steps
-    attributes:
-      label: 🤯 どうすれば同じ問題が起きますか？
-      description: バグを再現するための手順を教えてください
-      placeholder: |
-        例：
-        1. ログインページにアクセス
-        2. メールアドレスとパスワードを入力
-        3. ログインボタンをクリック
-        4. → エラーメッセージが表示される
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected_behavior
-    attributes:
-      label: ✅ 本当はどうなるべきですか？
-      description: 正常な場合はどのような動作になるべきかを教えてください
-      placeholder: |
-        例：正しい認証情報を入力した場合、ダッシュボードに移動するべき
-    validations:
-      required: true
-
-  - type: textarea
-    id: environment_and_notes
-    attributes:
-      label: 📝 その他・補足
-      description: 使用環境、スクリーンショット、エラーメッセージなど
-      placeholder: |
-        例：
-        - OS: macOS
-        - ブラウザ: Chrome
-        - エラーメッセージ: 「認証に失敗しました」
-        - スクリーンショット（あれば）
-      value: 特になし
-    validations:
-      required: false

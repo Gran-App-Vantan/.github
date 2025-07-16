@@ -8,60 +8,12 @@ body:
     id: improvement_summary
     attributes:
       label: 📊 変更・改善の概要
-      description: どのような変更を行いたいかを簡潔に説明してください
+      description: 詳細・変更箇所と命名規則・備考を入力してください
       placeholder: |
-        例：ユーザー登録フォームの入力体験を向上させたい
+        ## 詳細
+
+        ## 変更箇所と命名規則
+
+        ## 備考
     validations:
       required: true
-
-  - type: textarea
-    id: current_situation
-    attributes:
-      label: 📋 現在の状況
-      description: 変更対象となる現在の機能や状況を具体的に記述してください
-      placeholder: |
-        例：
-        - ユーザー登録時にエラーメッセージが分かりにくい
-        - フォームのバリデーションがリアルタイムで行われない
-        - 必須項目が視覚的に分かりにくい
-    validations:
-      required: true
-
-  - type: textarea
-    id: proposed_changes
-    attributes:
-      label: 💡 提案する変更内容
-      description: 具体的な改善案や変更内容を記述してください
-      placeholder: |
-        例：
-        1. エラーメッセージをより具体的で分かりやすい文言に変更
-        2. リアルタイムバリデーションを実装
-        3. 必須項目にアスタリスク（*）を追加
-        4. フォームの視覚的デザインを改善
-    validations:
-      required: true
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: 🎯 優先度
-      description: この改善の優先度を選択してください
-      options:
-        - 高（緊急）
-        - 中（重要）
-        - 低（余裕があるとき）
-    validations:
-      required: true
-
-  - type: textarea
-    id: additional_context
-    attributes:
-      label: 📝 追加情報
-      description: 参考資料、関連するissue、スクリーンショットなど
-      placeholder: |
-        - 参考にしたデザインやサービス
-        - 関連するissueやPR
-        - 参考資料のURL
-        - その他の補足情報
-    validations:
-      required: false

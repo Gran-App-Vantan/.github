@@ -6,7 +6,7 @@ body:
   - type: textarea
     id: design_summary
     attributes:
-      label: 🎯 何のデザインを作りたいですか？
+      label: 🎯 どのようなデザインを作りますか？
       description: 作成したいデザインの概要を説明してください
       placeholder: |
         例：モバイル向けのログインページのデザインを作成したい
@@ -25,20 +25,6 @@ body:
         - コンポーネント
         - バナー・広告
         - その他
-    validations:
-      required: true
-
-  - type: textarea
-    id: design_requirements
-    attributes:
-      label: 📝 どんなデザインにしたいですか？
-      description: デザインの要望やイメージを教えてください
-      placeholder: |
-        例：
-        - シンプルでモダンな感じ
-        - 青を基調とした色合い
-        - スマートフォンとPCで見やすい
-        - 会社のロゴを含める
     validations:
       required: true
 

@@ -14,16 +14,6 @@ body:
       required: true
 
   - type: textarea
-    id: why_needed
-    attributes:
-      label: 💡 なぜ必要ですか？
-      description: この機能が必要な理由やユーザーにとっての価値を教えてください
-      placeholder: |
-        例：ユーザーが自分らしさを表現できるようにして、コミュニティへの参加意欲を高めたい
-    validations:
-      required: true
-
-  - type: textarea
     id: basic_requirements
     attributes:
       label: 📋 どんな機能が必要ですか？

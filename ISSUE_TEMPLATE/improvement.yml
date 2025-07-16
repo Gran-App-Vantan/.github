@@ -1,0 +1,159 @@
+name: 🔧 変更・改善
+description: 既存機能の改善や変更を提案する際に使用します
+title: "[IMPROVEMENT] "
+labels: ["改善"]
+body:
+  - type: textarea
+    id: improvement_summary
+    attributes:
+      label: 🚀 何を改善したいですか？
+      description: どのような改善を行いたいかを簡潔に説明してください
+      placeholder: |
+        例：ユーザー登録フォームをもっと使いやすくしたい
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_problem
+    attributes:
+      label: 📋 今の何が問題ですか？
+      description: 改善したい現在の状況や問題点を教えてください
+      placeholder: |
+        例：
+        - エラーメッセージが分かりにくい
+        - 入力項目が多すぎる
+        - 見た目が古い
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: 💡 どう改善したいですか？
+      description: 具体的な改善案を教えてください
+      placeholder: |
+        例：
+        - エラーメッセージをもっと分かりやすくする
+        - 必須項目を減らす
+        - デザインを現代的にする
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🎯 いつまでに改善したいですか？
+      description: この改善の優先度を選択してください
+      options:
+        - 高（緊急・なるべく早く）
+        - 中（重要・計画的に進めたい）
+        - 低（余裕があるときに）
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: 📝 その他・補足
+      description: 参考資料、技術的な要望、制約事項など
+      placeholder: |
+        例：
+        - 参考にしたいサイトやアプリ
+        - 技術的な希望や制約
+        - 関連するissue
+      value: 特になし
+    validations:
+      required: false善
+description: 既存機能の改善や変更を提案・実装する際に使用します
+title: "[IMPROVEMENT] "
+labels: ["改善"]
+body:
+  - type: textarea
+    id: improvement_summary
+    attributes:
+      label: 📊 改善提案の概要
+      description: どのような改善を行いたいかを簡潔に説明してください
+      placeholder: |
+        例：ユーザー登録フォームの入力体験を向上させたい
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_situation
+    attributes:
+      label: 📋 現在の状況
+      description: 改善対象となる現在の機能や状況を具体的に記述してください
+      placeholder: |
+        例：
+        - ユーザー登録時にエラーメッセージが分かりにくい
+        - フォームのバリデーションがリアルタイムで行われない
+        - 必須項目が視覚的に分かりにくい
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_changes
+    attributes:
+      label: 💡 提案する改善内容
+      description: 具体的な改善案や変更内容を記述してください
+      placeholder: |
+        例：
+        1. エラーメッセージをより具体的で分かりやすい文言に変更
+        2. リアルタイムバリデーションを実装
+        3. 必須項目にアスタリスク（*）を追加
+        4. フォームの視覚的デザインを改善
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_benefits
+    attributes:
+      label: ✨ 期待される効果
+      description: この改善によってどのような効果が期待できるかを記述してください
+      placeholder: |
+        例：
+        - ユーザーの登録完了率の向上
+        - サポート問い合わせの減少
+        - ユーザー体験の向上
+        - 開発効率の改善
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🎯 優先度
+      description: この改善の優先度を選択してください
+      options:
+        - 高（緊急）
+        - 中（重要）
+        - 低（余裕があるとき）
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_notes
+    attributes:
+      label: 🛠️ 実装上の考慮事項
+      description: 実装時に考慮すべき点や制約があれば記述してください
+      placeholder: |
+        例：
+        - 既存のデザインシステムとの整合性
+        - パフォーマンスへの影響
+        - 他の機能への影響
+        - 必要なライブラリやツール
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 📝 追加情報
+      description: 参考資料、関連するissue、スクリーンショットなど
+      placeholder: |
+        - 参考にしたデザインやサービス
+        - 関連するissueやPR
+        - 参考資料のURL
+        - その他の補足情報
+    validations:
+      required: false

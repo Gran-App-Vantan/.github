@@ -1,0 +1,59 @@
+name: 🐴 その他
+description: 他のカテゴリに該当しない質問、提案、ディスカッションなどに使用します
+title: "[OTHER] "
+labels: ["その他"]
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: 📝 どんな内容ですか？
+      description: このissueの内容に最も近いものを選択してください
+      options:
+        - 質問・相談
+        - 提案・アイデア
+        - ディスカッション
+        - ドキュメント・資料
+        - 環境・設定
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 📋 内容を教えてください
+      description: 内容の概要を説明してください
+      placeholder: |
+        例：
+        - プロジェクトのコーディング規約について相談したい
+        - 新しい技術スタックの導入を提案したい
+        - チーム運営について議論したい
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 🎯 いつまでに対応が必要ですか？
+      description: この内容の緊急度を選択してください
+      options:
+        - 高（緊急対応が必要）
+        - 中（重要だが急ぎではない）
+        - 低（時間があるときに対応）
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 📝 その他・補足
+      description: 詳細情報、参考資料、関連するissueなど
+      placeholder: |
+        例：
+        - 詳しい背景や経緯
+        - 参考URL
+        - 関連するissue
+        - 添付ファイル
+      value: 特になし
+    validations:
+      required: false

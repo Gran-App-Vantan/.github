@@ -6,7 +6,6 @@ body:
   - type: textarea
     id: feature_summary
     attributes:
-      label: 🚀 何を作りたいですか？
       description: 詳細・作成箇所と命名規則・備考を入力してください
       placeholder: |
         ## 詳細

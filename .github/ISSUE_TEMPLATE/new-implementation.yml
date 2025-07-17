@@ -5,6 +5,7 @@ labels: ["新規実装"]
 body:
   - type: textarea
     id: feature_summary
+    label: 何を作成したいですか？
     attributes:
       description: 詳細・作成箇所と命名規則・備考を入力してください
       placeholder: |
